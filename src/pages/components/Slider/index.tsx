@@ -11,7 +11,6 @@ export function Slider() {
         navigation
         pagination
         modules={[Navigation, Pagination]}
-        color="#ABC200"
       >
         <SwiperSlide>
           <SliderItem

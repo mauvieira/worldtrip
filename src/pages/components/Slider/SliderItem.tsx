@@ -20,8 +20,8 @@ export function SliderItem({ title, description, slug, imageURL }: SliderItemPro
       direction="column"
       align="center"
     >
-      <Text as="h2" fontSize="48" fontWeight="bold">{title}</Text>
-      <Text fontSize="24" fontWeight="semibold">{description}</Text>
+      <Text as="h2" fontSize={["32", "48"]} fontWeight="bold">{title}</Text>
+      <Text fontSize={["18", "24"]} fontWeight="semibold">{description}</Text>
     </Flex>
   )
 }
