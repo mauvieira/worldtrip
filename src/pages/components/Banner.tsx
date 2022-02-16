@@ -1,6 +1,13 @@
-import { Divider, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Divider, Flex, Image, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 
 export function Banner() {
+
+  const isSmallScreen = useBreakpointValue({
+    base: true,
+    md: false,
+    lg: false,
+  })
+
   return (
     <Flex
       as="main"
@@ -26,9 +33,12 @@ export function Banner() {
             Chegou a hora de tirar do papel a viagem que você sempre sonhou.
           </Text>
         </Stack>
-        <Flex flex="1" justify="flex-end" mt="32">
-          <Image src="/airplane.svg" alt="Airplane" />
-        </Flex>
+
+        {!isSmallScreen &&
+          <Flex flex="1" justify="flex-end" mt="32">
+            <Image src="/airplane.svg" alt="Airplane" />
+          </Flex>}
+
       </Flex>
     </Flex>
   )
