@@ -1,4 +1,5 @@
-import { Flex, Text } from "@chakra-ui/react"
+import Link from "next/link"
+import { Box, Flex, Text } from "@chakra-ui/react"
 
 interface SliderItemProps {
   imageURL: string;
@@ -10,7 +11,6 @@ interface SliderItemProps {
 export function SliderItem({ title, description, slug, imageURL }: SliderItemProps) {
   return (
     <Flex
-      // href={`/${slug}`}
       bg={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${imageURL})`}
       bgPosition="center"
       bgRepeat="no-repeat"
@@ -20,8 +20,14 @@ export function SliderItem({ title, description, slug, imageURL }: SliderItemPro
       direction="column"
       align="center"
     >
-      <Text as="h2" fontSize={["32", "48"]} fontWeight="bold">{title}</Text>
-      <Text fontSize={["18", "24"]} fontWeight="semibold">{description}</Text>
+      <Link href={`/${slug}`}>
+        <a>
+          <Box textAlign="center">
+            <Text as="h2" fontSize={["32", "48"]} fontWeight="bold">{title}</Text>
+            <Text fontSize={["18", "24"]} fontWeight="semibold">{description}</Text>
+          </Box>
+        </a>
+      </Link>
     </Flex>
   )
 }
