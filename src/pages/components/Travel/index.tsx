@@ -3,7 +3,7 @@ import { TravelType } from "./TravelType";
 
 export function Travel() {
   return (
-    <Container as="section" maxWidth={1160} mx="auto" px="6" py={["18", "18", "32"]}>
+    <Container as="section" maxWidth={1160} mx="auto" px="6" py={["18", "18", "24"]}>
       <SimpleGrid minChildWidth={["136px", "215px"]} gap={["8", "8", "8", "0"]} alignContent="center">
         <TravelType imageURL="/icons/cocktail.svg" title="vida noturna" />
         <TravelType imageURL="/icons/surf.svg" title="praia" />

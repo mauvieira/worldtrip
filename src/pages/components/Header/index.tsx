@@ -10,7 +10,7 @@ export function Header() {
   const isNotHomePage = asPath !== '/'
 
   return (
-    <Flex as="header" justify="center" align="center" py={2}>
+    <Flex as="header" justify="center" align="center" py={4}>
       {isNotHomePage && <Link />}
       <Image src="/worldtrip.svg" alt="Worldtrip Logo" />
     </Flex>
