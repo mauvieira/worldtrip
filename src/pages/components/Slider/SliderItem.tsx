@@ -20,7 +20,7 @@ export function SliderItem({ title, description, slug, imageURL }: SliderItemPro
       direction="column"
       align="center"
     >
-      <Link href={`/${slug}`}>
+      <Link href={`/continent/${slug}`}>
         <a>
           <Box textAlign="center">
             <Text as="h2" fontSize={["32", "48"]} fontWeight="bold">{title}</Text>
