@@ -2,10 +2,9 @@ import { Divider, Flex, Image, Stack, Text, useBreakpointValue } from "@chakra-u
 
 export function Banner() {
 
-  const isSmallScreen = useBreakpointValue({
+  const isMobileScreen = useBreakpointValue({
     base: true,
     md: false,
-    lg: false,
   })
 
   return (
@@ -34,7 +33,7 @@ export function Banner() {
           </Text>
         </Stack>
 
-        {!isSmallScreen &&
+        {!isMobileScreen &&
           <Flex flex="1" justify="flex-end" mt="32">
             <Image src="/airplane.svg" alt="Airplane" />
           </Flex>}
