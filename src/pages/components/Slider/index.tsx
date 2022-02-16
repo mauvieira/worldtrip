@@ -13,8 +13,8 @@ export function Slider({ continents }: ContinentPageProps) {
         pagination
         modules={[Navigation, Pagination]}
       >
-        <SwiperSlide>
-          {continents.map(({ slug, title, thumbnail, subtitle }) => (
+        {continents.map(({ slug, title, thumbnail, subtitle }) => (
+          <SwiperSlide>
             <SliderItem
               key={slug}
               title={title}
@@ -22,10 +22,8 @@ export function Slider({ continents }: ContinentPageProps) {
               slug={slug}
               imageURL={thumbnail.url}
             />
-          ))}
-
-        </SwiperSlide>
-
+          </SwiperSlide>
+        ))}
       </Swiper>
     </Box>
   )
