@@ -5,7 +5,7 @@ import { SliderItem } from "./SliderItem";
 
 export function Slider() {
   return (
-    <Box mt="10">
+    <Box mt="10" mb="5">
       <Swiper
         slidesPerView={1}
         navigation
@@ -32,15 +32,6 @@ export function Slider() {
 
         <SwiperSlide>
           <SliderItem
-            title="América do Sul"
-            description="O subcontinente do continente americano."
-            slug="america_do_sul"
-            imageURL="https://images.unsplash.com/photo-1591533985302-42123fa9240b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <SliderItem
             title="Ásia"
             description="O maior dos continentes"
             slug="asia"
@@ -59,8 +50,17 @@ export function Slider() {
 
         <SwiperSlide>
           <SliderItem
+            title="América do Sul"
+            description="O subcontinente do continente americano."
+            slug="america_do_sul"
+            imageURL="https://images.unsplash.com/photo-1591533985302-42123fa9240b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <SliderItem
             title="Oceania"
-            description="situado entre o Índico e o Pacífico"
+            description="Situado entre o Índico e o Pacífico"
             slug="oceania"
             imageURL="https://images.unsplash.com/photo-1588001400947-6385aef4ab0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
           />
