@@ -1,5 +1,5 @@
-import { Box, Flex, Icon, Image, Text, useBreakpointValue } from "@chakra-ui/react";
-import { FaCircle } from "react-icons/fa";
+import { Flex, Icon, Image, Text, useBreakpointValue } from "@chakra-ui/react"
+import { FaCircle } from "react-icons/fa"
 
 interface TravelTypeProps {
   imageURL: string;

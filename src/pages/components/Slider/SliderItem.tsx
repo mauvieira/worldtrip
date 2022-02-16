@@ -2,10 +2,10 @@ import Link from "next/link"
 import { Box, Flex, Text } from "@chakra-ui/react"
 
 interface SliderItemProps {
-  imageURL: string;
-  title: string;
-  description: string;
-  slug: string;
+  imageURL: string
+  title: string
+  description: string
+  slug: string
 }
 
 export function SliderItem({ title, description, slug, imageURL }: SliderItemProps) {

@@ -1,4 +1,4 @@
-import { Divider as ChakraDivider, Flex } from "@chakra-ui/react";
+import { Divider as ChakraDivider, Flex } from "@chakra-ui/react"
 
 export function Divider() {
   return (

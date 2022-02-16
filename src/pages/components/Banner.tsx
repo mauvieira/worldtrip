@@ -1,4 +1,4 @@
-import { Divider, Flex, Image, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Divider, Flex, Image, Stack, Text, useBreakpointValue } from "@chakra-ui/react"
 
 export function Banner() {
 
@@ -25,11 +25,11 @@ export function Banner() {
       >
         <Stack color="gray.50" spacing={4} flex="1">
           <Text as="h1" fontSize="36">
-            5 Continentes, <Divider opacity="0" />
-            infinitas possibilidades.
+            5 continents, <Divider opacity="0" />
+            infinite possibilities.
           </Text>
           <Text as="span" fontSize="20">
-            Chegou a hora de tirar do papel a viagem que você sempre sonhou.
+            The time has come to take the trip you've always dreamed of.
           </Text>
         </Stack>
 

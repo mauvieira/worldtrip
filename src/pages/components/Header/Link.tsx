@@ -1,6 +1,6 @@
-import { Box, Icon } from "@chakra-ui/react";
-import NextLink from "next/link";
-import { RiArrowLeftSLine } from "react-icons/ri";
+import { Box, Icon } from "@chakra-ui/react"
+import NextLink from "next/link"
+import { RiArrowLeftSLine } from "react-icons/ri"
 
 export function Link() {
   return (
